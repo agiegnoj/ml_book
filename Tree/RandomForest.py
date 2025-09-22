@@ -47,11 +47,5 @@ def buildTrees(X, y, trees, maxDepthPerTree, noOfTrees, minElementsPerNode):
         dTree.fit(attributes, values, True)
         trees.append(dTree)
 
-
-def generate_data(n_samples=100, n_features=5, n_classes=2):
-    X = np.random.rand(n_samples, n_features)
-    y = np.random.randint(0, n_classes, size=n_samples)
-    return X, y
-
 if __name__ == "__main__":
     freeze_support()
